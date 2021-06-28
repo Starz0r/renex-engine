@@ -24,6 +24,7 @@
 	|FileMenu
 	|OptionsMenu
 	|KeyboardMenu
+	|JoystickMenu
 	|PauseMenu
 +System
 	|BloodEmitter
@@ -122,6 +123,11 @@
 	+Vcoin
 		|VCoinGive
 		|VCoinTake
+	+KTG
+		|SingleJumpSwitchBlock
+		|SingleJumpSwitchBlockOff
+		|DoubleJumpSwitchBlock
+		|DoubleJumpSwitchBlockOff
 	|CautionStripL
 	|CautionStripR
 	|CautionFastL

@@ -38,6 +38,7 @@ if (monitorspeed) {
 }
 
 if (message) message-=1
+if (message2) message2-=1
 
 //music fade
 if (fading) {
@@ -112,12 +113,12 @@ if ((keyboard_check(vk_alt) && keyboard_check_pressed(vk_return)) || keyboard_ch
 }
 
 //die key
-if (keyboard_check_pressed(ord("Q"))) {
+if (global.key_pressed[key_die]) {
     kill_player()
 }
 
 //restart
-if (keyboard_check_pressed(ord("R"))) {
+if (global.key_pressed[key_restart]) {
     if (is_ingame() && !global.pause) {
         sound_kind_stop(0)
         savedata_load()
