@@ -33,7 +33,9 @@ oldtime=hrt_time_now()
 
 orderTest=2
 
-cam_l=0
-cam_t=0
+camera_l=0
+camera_t=0
+memcaml=-1
+memcamt=-1
 
 globalvar view_xcenter,view_ycenter;
